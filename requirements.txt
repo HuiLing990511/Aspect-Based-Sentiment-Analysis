@@ -1,0 +1,14 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+spacy
+vaderSentiment
+nltk
+sentence-transformers
+transformers
+openpyxl
+python-dotenv
+scipy
+torch
