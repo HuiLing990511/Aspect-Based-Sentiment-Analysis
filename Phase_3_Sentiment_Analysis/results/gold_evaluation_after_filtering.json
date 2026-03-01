@@ -1,0 +1,76 @@
+{
+  "overall": {
+    "accuracy": 0.8888,
+    "macro_f1": 0.8747,
+    "neg_f1": 0.8328,
+    "pos_f1": 0.9167
+  },
+  "per_aspect": {
+    "AMBIENCE": {
+      "accuracy": 0.8617,
+      "macro_f1": 0.7972,
+      "neg_f1": 0.6829,
+      "pos_f1": 0.9116
+    },
+    "AUTHENTICITY & LOCAL VIBE": {
+      "accuracy": 0.92,
+      "macro_f1": 0.8904,
+      "neg_f1": 0.8333,
+      "pos_f1": 0.9474
+    },
+    "FOOD": {
+      "accuracy": 0.92,
+      "macro_f1": 0.9055,
+      "neg_f1": 0.8684,
+      "pos_f1": 0.9425
+    },
+    "HALAL COMPLIANCE": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "neg_f1": 0.0,
+      "pos_f1": 1.0
+    },
+    "LOCATION": {
+      "accuracy": 0.5,
+      "macro_f1": 0.4905,
+      "neg_f1": 0.4211,
+      "pos_f1": 0.56
+    },
+    "LOYALTY (RETURN INTENT)": {
+      "accuracy": 0.9515,
+      "macro_f1": 0.9438,
+      "neg_f1": 0.9231,
+      "pos_f1": 0.9645
+    },
+    "NON-HALAL ELEMENTS": {
+      "accuracy": 0.8095,
+      "macro_f1": 0.6912,
+      "neg_f1": 0.5,
+      "pos_f1": 0.8824
+    },
+    "SERVICE": {
+      "accuracy": 0.8882,
+      "macro_f1": 0.8867,
+      "neg_f1": 0.8741,
+      "pos_f1": 0.8994
+    },
+    "VALUE": {
+      "accuracy": 0.8286,
+      "macro_f1": 0.825,
+      "neg_f1": 0.8,
+      "pos_f1": 0.85
+    }
+  },
+  "n_samples": 899,
+  "aspects": [
+    "AMBIENCE",
+    "AUTHENTICITY & LOCAL VIBE",
+    "FOOD",
+    "HALAL COMPLIANCE",
+    "LOCATION",
+    "LOYALTY (RETURN INTENT)",
+    "NON-HALAL ELEMENTS",
+    "SERVICE",
+    "VALUE"
+  ]
+}
