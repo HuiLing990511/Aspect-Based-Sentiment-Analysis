@@ -1,0 +1,128 @@
+{
+  "data_overview": {
+    "total_reviews": 16589,
+    "total_restaurants": 3827,
+    "total_segments": 163667,
+    "total_aspect_segment_pairs": 163667,
+    "unique_aspects": 10,
+    "aspects_list": [
+      "AMBIENCE",
+      "AUTHENTICITY & LOCAL VIBE",
+      "FOOD",
+      "GENERAL",
+      "HALAL COMPLIANCE",
+      "LOCATION",
+      "LOYALTY (RETURN INTENT)",
+      "NON-HALAL ELEMENTS",
+      "SERVICE",
+      "VALUE"
+    ]
+  },
+  "prediction_distribution": {
+    "positive_predictions": 151633,
+    "negative_predictions": 12034,
+    "pct_positive": 92.65,
+    "pct_negative": 7.35
+  },
+  "confidence_metrics": {
+    "mean_confidence": 0.9174,
+    "median_confidence": 0.9645,
+    "high_confidence_count": 153282,
+    "low_confidence_count": 10385,
+    "pct_high_confidence": 93.65,
+    "confidence_threshold": 0.7
+  },
+  "per_aspect_summary": {
+    "AMBIENCE": {
+      "total_mentions": 20177,
+      "num_positive": 18770,
+      "num_negative": 1407,
+      "pct_positive": 93.03,
+      "pct_negative": 6.97,
+      "avg_confidence": 0.9247
+    },
+    "AUTHENTICITY & LOCAL VIBE": {
+      "total_mentions": 5061,
+      "num_positive": 4957,
+      "num_negative": 104,
+      "pct_positive": 97.95,
+      "pct_negative": 2.05,
+      "avg_confidence": 0.9157
+    },
+    "FOOD": {
+      "total_mentions": 72064,
+      "num_positive": 67269,
+      "num_negative": 4795,
+      "pct_positive": 93.35,
+      "pct_negative": 6.65,
+      "avg_confidence": 0.9089
+    },
+    "GENERAL": {
+      "total_mentions": 3,
+      "num_positive": 3,
+      "num_negative": 0,
+      "pct_positive": 100.0,
+      "pct_negative": 0.0,
+      "avg_confidence": 0.918
+    },
+    "HALAL COMPLIANCE": {
+      "total_mentions": 792,
+      "num_positive": 771,
+      "num_negative": 21,
+      "pct_positive": 97.35,
+      "pct_negative": 2.65,
+      "avg_confidence": 0.911
+    },
+    "LOCATION": {
+      "total_mentions": 6408,
+      "num_positive": 6245,
+      "num_negative": 163,
+      "pct_positive": 97.46,
+      "pct_negative": 2.54,
+      "avg_confidence": 0.9101
+    },
+    "LOYALTY (RETURN INTENT)": {
+      "total_mentions": 18176,
+      "num_positive": 16811,
+      "num_negative": 1365,
+      "pct_positive": 92.49,
+      "pct_negative": 7.51,
+      "avg_confidence": 0.9421
+    },
+    "NON-HALAL ELEMENTS": {
+      "total_mentions": 2422,
+      "num_positive": 2312,
+      "num_negative": 110,
+      "pct_positive": 95.46,
+      "pct_negative": 4.54,
+      "avg_confidence": 0.8894
+    },
+    "SERVICE": {
+      "total_mentions": 24352,
+      "num_positive": 21706,
+      "num_negative": 2646,
+      "pct_positive": 89.13,
+      "pct_negative": 10.87,
+      "avg_confidence": 0.932
+    },
+    "VALUE": {
+      "total_mentions": 14212,
+      "num_positive": 12789,
+      "num_negative": 1423,
+      "pct_positive": 89.99,
+      "pct_negative": 10.01,
+      "avg_confidence": 0.9019
+    }
+  },
+  "model_info": {
+    "model_name": "xlm-roberta-base",
+    "model_path": "C:\\Users\\Ong Hui Ling\\Dropbox\\PC\\Documents\\Github\\Aspect-Based-Sentiment-Analysis\\Modelling\\models\\xlm_roberta_absa_best_after_filtering.pt",
+    "batch_size": 64,
+    "max_seq_length": 128
+  },
+  "output_files": {
+    "segment_predictions": "C:\\Users\\Ong Hui Ling\\Dropbox\\PC\\Documents\\Github\\Aspect-Based-Sentiment-Analysis\\Dataset\\Output\\segment_level_predictions.csv",
+    "restaurant_aggregates": "C:\\Users\\Ong Hui Ling\\Dropbox\\PC\\Documents\\Github\\Aspect-Based-Sentiment-Analysis\\Dataset\\Output\\restaurant_aspect_aggregates.csv",
+    "kano_input": "C:\\Users\\Ong Hui Ling\\Dropbox\\PC\\Documents\\Github\\Aspect-Based-Sentiment-Analysis\\Dataset\\Output\\kano_model_input.csv"
+  }
+}
