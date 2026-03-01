@@ -1,0 +1,93 @@
+{
+  "config": {
+    "model_name": "xlm-roberta-base",
+    "aspect_labels": [
+      "FOOD",
+      "SERVICE",
+      "VALUE",
+      "LOCATION",
+      "AMBIENCE",
+      "HALAL COMPLIANCE",
+      "NON-HALAL ELEMENTS",
+      "AUTHENTICITY & LOCAL VIBE",
+      "LOYALTY (RETURN INTENT)"
+    ],
+    "num_labels": 9,
+    "data_path": "/content/drive/MyDrive/Aspect-Based-Sentiment-Analysis/Dataset/aspect_categorization_after_filtering.pkl",
+    "max_seq_length": 128,
+    "test_size": 0.15,
+    "val_size": 0.1,
+    "random_seed": 42,
+    "min_aspect_frequency": 50,
+    "batch_size": 32,
+    "learning_rate": 2e-05,
+    "num_epochs": 5,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.01,
+    "pos_weights": {
+      "FOOD": 0.7897309486127256,
+      "SERVICE": 4.299423547464023,
+      "VALUE": 8.103440906176534,
+      "LOCATION": 19.145830048872774,
+      "AMBIENCE": 5.388930553472326,
+      "HALAL COMPLIANCE": 161.3697585768742,
+      "NON-HALAL ELEMENTS": 52.894981020666386,
+      "AUTHENTICITY & LOCAL VIBE": 24.384386174016687,
+      "LOYALTY (RETURN INTENT)": 6.099955550616735
+    },
+    "use_asymmetric_loss": true,
+    "asl_gamma_neg": 4.0,
+    "asl_gamma_pos": 0.0,
+    "asl_clip": 0.05,
+    "label_smoothing": 0.1,
+    "pooling_mode": "mean",
+    "prediction_threshold": 0.5,
+    "per_aspect_thresholds": null,
+    "output_dir": "models",
+    "best_model_path": "/content/drive/MyDrive/Aspect-Based-Sentiment-Analysis/Modelling/models/xlm_roberta_aspect_categorization_best.pt",
+    "metrics_path": "/content/drive/MyDrive/Aspect-Based-Sentiment-Analysis/Modelling/results/aspect_training_metrics.json",
+    "label_encoder_path": "/content/drive/MyDrive/Aspect-Based-Sentiment-Analysis/Modelling/results/aspect_label_encoder.pkl",
+    "gold_data_path": "/content/drive/MyDrive/Aspect-Based-Sentiment-Analysis/Dataset/Final_Gold_Standard.csv",
+    "gold_results_path": "/content/drive/MyDrive/Aspect-Based-Sentiment-Analysis/Modelling/results/aspect_gold_evaluation.json"
+  },
+  "history": {
+    "train_loss": [
+      0.039613851392097485,
+      0.01941946991198449,
+      0.018047364183292662,
+      0.017405607123456533,
+      0.016993807402683518
+    ],
+    "val_loss": [
+      0.0052068334427531225,
+      0.003355371230863966,
+      0.0022417871967718383,
+      0.0020084911201820434,
+      0.0018396740829120972
+    ],
+    "val_f1_micro": [
+      0.979830083735713,
+      0.9890103143418467,
+      0.9921264685981424,
+      0.9933819681718842,
+      0.9946692139401596
+    ]
+  },
+  "test_metrics": {
+    "hamming_loss": 0.0015535151177889074,
+    "f1_micro": 0.9944985014574865,
+    "f1_macro": 0.9901077132769893,
+    "f1_samples": 0.9954600259692079,
+    "precision_micro": 0.9920953473132372,
+    "recall_micro": 0.9969133261996872,
+    "f1_FOOD": 0.9959035471557584,
+    "f1_SERVICE": 0.9943236882181918,
+    "f1_VALUE": 0.9938920107500611,
+    "f1_LOCATION": 0.993717277486911,
+    "f1_AMBIENCE": 0.9904761904761905,
+    "f1_HALAL COMPLIANCE": 0.9642857142857143,
+    "f1_NON-HALAL ELEMENTS": 0.9855072463768116,
+    "f1_AUTHENTICITY & LOCAL VIBE": 0.9964961457603364,
+    "f1_LOYALTY (RETURN INTENT)": 0.9963675989829277
+  }
+}
